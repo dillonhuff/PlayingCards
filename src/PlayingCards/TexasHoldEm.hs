@@ -25,9 +25,9 @@ isActive :: TexasHoldEm -> Player -> Bool
 isActive game player = elem player $ activePlayers game
 
 foldPlayer :: TexasHoldEm -> Player -> TexasHoldEm
-foldPlayer (TexH actives info) player = TexH newActives info
+foldPlayer game player = game { activePlayers = newActives }
   where
-    newActives = L.delete player actives
+    newActives = L.delete player $ activePlayers game
 
 placeBet :: TexasHoldEm -> Player -> Int -> TexasHoldEm
 placeBet game player bet = game
