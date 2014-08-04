@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                PlayingCards
-version:             0.2.0.0
+version:             0.3.0.0
 synopsis:            Playing cards api
 -- description:         
 license:             BSD3
@@ -17,5 +17,5 @@ cabal-version:       >=1.8
 library
   exposed-modules:     PlayingCards.Deck
   -- other-modules:       
-  build-depends:       base ==4.6.*, HUnit ==1.2.*, QuickCheck
+  build-depends:       base ==4.6.*, HUnit ==1.2.*, QuickCheck, random-shuffle, MonadRandom
   hs-source-dirs:      src
