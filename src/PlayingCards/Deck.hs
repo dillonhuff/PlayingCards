@@ -14,7 +14,7 @@ import Test.QuickCheck
 data Deck = Deck [Card]
             deriving (Eq, Ord, Show)
 
-data Card = Flat Suit Rank
+data Card = Flat Rank Suit
             deriving (Eq, Ord, Show)
 
 card = Flat
@@ -60,7 +60,7 @@ three = Three
 two = Two
 
 newDeckCards :: [Card]
-newDeckCards = [Flat s r | s <- [minBound..maxBound], r <- [minBound..maxBound]]
+newDeckCards = [Flat r s | r <- [minBound..maxBound], s <- [minBound..maxBound]]
 
 newDeck :: Deck
 newDeck = Deck newDeckCards
