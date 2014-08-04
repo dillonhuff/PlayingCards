@@ -1,4 +1,4 @@
-module Deck(
+module PlayingCards.Deck(
   card,
   spades, hearts, clubs, diamonds,
   ace, king, queen, jack, ten, nine, eight,

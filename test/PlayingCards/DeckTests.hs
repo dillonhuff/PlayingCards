@@ -1,7 +1,7 @@
-module DeckTests() where
+module PlayingCards.DeckTests() where
 
-import Deck
-import TestUtils
+import PlayingCards.Deck
+import PlayingCards.TestUtils
 
 import Test.QuickCheck
 

@@ -1,4 +1,4 @@
-module TestUtils(testFunction) where
+module PlayingCards.TestUtils(testFunction) where
 
 import Test.HUnit
 
